@@ -1,84 +1,76 @@
-body {
-    margin: 0;
+#centro {
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
-
-.login {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 1000px;
-}
-
-.img-container{
-    background-image: url("./img/linnea-sandbakk-HQqIOc8oYro-unsplash.jpg");
+  
+.contenedor-formulario{
+    width: 95%;
+    height: 700px;
+    background-image: url(./Imag/michael-weidner-h-rP5KSC2W0-unsplash.jpg);
+    margin-top: 15px;
     background-size: cover;
-    background-position: center;
+    background-position: right;
+    color: white;
 }
 
-
-.form-container {
-    padding: 128px 64px;
+.Titulo{
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 40px;
 }
 
-.form-title {
-    margin-bottom: 120px;
-    font-family: sans-serif;
-    color: rgba(0, 0, 0, 0.80);
-    font-size: 28px;
-}
-
-.form-group {
+.datos{
     margin-bottom: 24px;
 }
 
-.form-label {
+.formulario-contacto{
+    padding: 30px 0px 0px 350px;
+}
+
+.formulario-label {
     display: block;
     font-family: sans-serif;
     margin-bottom: 8px;
-    color: rgba(0, 0, 0, 0.70);
+    color:white;
     font-weight: 500;
 }
 
-.form-input {
+.formulario-input {
     display: block;
-    width: 80%;
-    border: 1px solid rgba(0, 0, 0, 0.40);
+    width: 70%;
+    border: 1px solid white;
     border-radius: 3px;
     line-height: 25px;
+
 }
 
-.forgot-link {
-    display: block;
-    margin-bottom: 40px;
-    text-decoration: none;
-    color: #0081A8;
-    font-family: sans-serif;
+#mensaje{
+    padding: 40px 0px;
 }
 
-.form-submit-button {
-    width: 80%;
-    background-color: #F57C00;
+.boton-formulario{
+    width: 70%;
+    background-color:darkred;
     color: white;
-    border: 1px solid black;
+    border: 1px solid darkred;
     border-radius: 3px;
     height: 30px;
 }
 
+
 @media (max-width: 768px) {
 
-    .login {
-        grid-template-columns: 1fr;
-        height: 1vh;
-    }
-
-    .img-container {
-        display: none;
-    }
-
-    .form-input {
+    .formulario-input {
         width: 100%;
     }
 
-    .form-submit-button {
+    .boton-formulario {
         width: 100%;
+    }
+
+    .formulario-contacto{
+        padding: 0px 20px;
     }
 }
+
